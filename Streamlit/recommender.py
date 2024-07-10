@@ -8,12 +8,12 @@ from io import BytesIO
 from PIL import Image
 
 #Load the preprocessor, KNN models, processed subsets, and DataFrame
-preprocessor = joblib.load('data/preprocessor.pkl')
-knn_models = joblib.load('data/knn_models.pkl')
-processed_subsets = joblib.load('data/processed_subsets.pkl')
-best = pd.read_pickle('data/best_df.pkl')
+preprocessor = joblib.load('Streamlit/data/preprocessor.pkl')
+knn_models = joblib.load('Streamlit/data/knn_models.pkl')
+processed_subsets = joblib.load('Streamlit/data/processed_subsets.pkl')
+best = pd.read_pickle('Streamlit/data/best_df.pkl')
 
-# Function to recommend books
+
 # Function to recommend books
 def recommend_books(book_title, df, knn_models, processed_subsets, preprocessor):
     # Find matching books
