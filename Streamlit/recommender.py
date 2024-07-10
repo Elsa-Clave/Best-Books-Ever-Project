@@ -31,7 +31,7 @@ def show_recommender():
 
     # Display image
     try:
-        image = Image.open("images/banner.png")
+        image = Image.open("Streamlit/images/banner.png")
         st.image(image, caption='Welcome to the club', use_column_width=False, width=600)
     except FileNotFoundError:
         st.error("The image file was not found. Please check the file path.")
